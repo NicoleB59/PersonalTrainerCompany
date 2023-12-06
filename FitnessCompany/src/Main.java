@@ -1,5 +1,9 @@
 //Importing all files from GYM package to main class
 import GYM.*;
+import COST.*;
+import PEOPLE.*;
+
+import java.util.stream.StreamSupport;
 
 public class Main {
     public static void main(String[] args) {
@@ -79,6 +83,65 @@ public class Main {
         //Printing the staff components
         System.out.println(staff2);
 
+        //Print new line
+        System.out.println();
+
+        //setting a new payment for output
+        payments payment1 = new payments();
+
+        //adding a try and catch method for code to throw an exception
+        try{
+            payment1.setMembership(membership.BASICMEMBERSHIP.name());
+            payment1.setCost(30);
+        } catch (Exception e){
+            System.out.println("***AN EXCEPTION HAS OCCURRED*** " + e.getMessage());
+        }
+
+        //Print new line
+        System.out.println();
+
+        //setting a new payment for output
+        payments payment2 = new payments();
+
+        //adding a try and catch method for code to throw an exception
+        try{
+            payment1.setMembership(membership.PROMEMBERSHIP.name());
+            payment1.setCost(60);
+        } catch (Exception e){
+            System.out.println("***AN EXCEPTION HAS OCCURRED*** " + e.getMessage());
+        }
+
+        //Print new line
+        System.out.println();
+
+        //setting a new trainee for output - had to make trainees not abstract
+        trainees trainees1 = new trainees();
+
+        try{
+            trainees1.setName("Louise Mere");
+            trainees1.setAge(18);
+            trainees1.setPhone("083-625-1384");
+            trainees1.setAddress("134 NashField");
+            trainees1.setNumOfMembership(0);
+        } catch (Exception e) {
+            System.out.println("***AN EXCEPTION HAS OCCURRED*** " + e.getMessage());
+        }
+
+        //Print new line
+        System.out.println();
+
+        //setting a new trainee for output - had to make trainees not abstract
+        trainees trainees2 = new trainees();
+
+        try{
+            trainees2.setName("Taylor Cahill");
+            trainees2.setAge(23);
+            trainees2.setPhone("086-322-9824");
+            trainees2.setAddress("72 OaklowField");
+            trainees2.setNumOfMembership(1);
+        } catch (Exception e) {
+            System.out.println("***AN EXCEPTION HAS OCCURRED*** " + e.getMessage());
+        }
 
     }
 }
