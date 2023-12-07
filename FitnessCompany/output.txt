@@ -1,0 +1,15 @@
+***AN EXCEPTION HAS OCCURRED*** There are no appointments
+
+***AN EXCEPTION HAS OCCURRED*** Cancelled their appointment.
+
+staff{name = Jared Andoerson , this trainer has 3 years of experience , phoneNum = 083-456-8806 
+	 trainees = trainees{name='Louise Mere', age=18, address='134 NashField', phone='083-625-1384'}, 
+	 appointments = appointments{Excercise = CARDIO, time = 16:00pm , date = 12th of October , location = OUTDOOR}
+	 payments = payments{membership='BASICMEMBERSHIP', cost=30} }
+
+staff{name = Emily Vonga , this trainer has 5 years of experience , phoneNum = 083-465-2819 
+	 trainees = trainees{name='Taylor Cahill', age=23, address='72 OaklowField', phone='086-322-9824'}, 
+	 appointments = appointments{Excercise = ABS, time = 14:00pm , date = 14th of March , location = INDOOR}
+	 payments = payments{membership='PROMEMBERSHIP', cost=60} }
+
+Process finished with exit code 0
